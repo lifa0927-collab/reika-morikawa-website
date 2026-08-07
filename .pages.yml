@@ -1,6 +1,7 @@
 media:
-  input: .
-  output: .
+  input: media
+  output: /media
+  rename: safe
 
 content:
   - name: site
@@ -8,6 +9,8 @@ content:
     type: file
     path: content.json
     format: json
+    operations:
+      delete: false
     fields:
       - name: site
         label: 名前・所属・連絡先
@@ -22,9 +25,24 @@ content:
           - name: affiliation
             label: 所属
             type: string
+          - name: position
+            label: 職位
+            type: string
           - name: email
             label: 問い合わせメール
             type: string
+          - name: orcid
+            label: ORCID
+            type: string
+            description: "例：https://orcid.org/0000-0000-0000-0000"
+          - name: google_scholar
+            label: Google Scholar
+            type: string
+            description: "Google ScholarプロフィールのURL"
+          - name: researchmap
+            label: researchmap
+            type: string
+            description: "researchmapプロフィールのURL"
 
       - name: profile
         label: プロフィール
@@ -43,7 +61,10 @@ content:
       - name: research_themes
         label: 研究テーマ
         type: object
-        list: true
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
         fields:
           - name: title
             label: テーマ名
@@ -55,7 +76,10 @@ content:
       - name: activities
         label: 活動
         type: object
-        list: true
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{year}｜{title}"
         fields:
           - name: year
             label: 年
@@ -69,17 +93,74 @@ content:
           - name: description
             label: 説明
             type: text
+          - name: url
+            label: 関連URL
+            type: string
 
       - name: publications
         label: 書籍・論文
         type: object
-        list: true
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{year}｜{title}"
         fields:
           - name: type
             label: 種別
             type: string
+          - name: year
+            label: 年
+            type: string
           - name: title
             label: タイトル
+            type: string
+          - name: citation
+            label: 書誌情報・説明
+            type: text
+          - name: url
+            label: DOI・出版社・論文URL
+            type: string
+
+      - name: presentations
+        label: 講演・研究発表
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{year}｜{title}"
+        fields:
+          - name: year
+            label: 年
+            type: string
+          - name: title
+            label: タイトル
+            type: string
+          - name: event
+            label: 学会・イベント
+            type: string
+          - name: place
+            label: 場所
+            type: string
+          - name: url
+            label: 関連URL
+            type: string
+
+      - name: teaching
+        label: 授業
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{institution}｜{course}"
+        fields:
+          - name: institution
+            label: 大学・機関
+            type: string
+          - name: course
+            label: 科目名
+            type: string
+          - name: year
+            label: 年度
             type: string
           - name: description
             label: 説明
@@ -88,7 +169,10 @@ content:
       - name: news
         label: お知らせ
         type: object
-        list: true
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{date}｜{title}"
         fields:
           - name: date
             label: 日付
@@ -99,3 +183,6 @@ content:
           - name: description
             label: 説明
             type: text
+          - name: url
+            label: 関連URL
+            type: string
