@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="森川麗華の公式サイト">
+<title>森川麗華｜公式サイト</title>
+<style>
+:root{--navy:#1e355e;--pink:#c86b8e;--ivory:#faf8f4;--white:#fffdf9;--text:#26324a;--muted:#6d7280;--line:rgba(30,53,94,.14);--shadow:0 20px 50px rgba(30,53,94,.08);--radius:24px;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ivory);color:var(--text);font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",system-ui,sans-serif;line-height:1.9;letter-spacing:.025em}
+a{color:inherit}img{display:block;max-width:100%}.wrap{width:min(calc(100% - 40px),var(--max));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(250,248,244,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{text-decoration:none;display:flex;flex-direction:column;line-height:1.15}
+.brand-jp{color:var(--navy);font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:1.42rem;letter-spacing:.14em}.brand-en{margin-top:5px;color:var(--pink);font-size:.67rem;letter-spacing:.17em}
+.nav-links{display:flex;gap:22px;font-size:.88rem;font-weight:700}.nav-links a{text-decoration:none;padding:8px 0;border-bottom:2px solid transparent}.nav-links a:hover{color:var(--pink);border-color:var(--pink)}
+.menu-btn{display:none;border:0;background:transparent;color:var(--navy);font-size:1.55rem}
+.hero{min-height:640px;display:grid;align-items:center;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:390px;height:390px;right:-90px;top:105px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#f7e6ec,#e8b2c4 58%,#c86b8e);opacity:.18}
+.hero-inner{display:grid;grid-template-columns:1.3fr .7fr;align-items:center;gap:76px;padding:96px 0;position:relative}.hero h1{margin:0 0 8px;color:var(--navy);font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:clamp(3rem,7vw,5.7rem);line-height:1.25;letter-spacing:.08em}
+.hero-name-en{margin-bottom:28px;color:var(--pink);font-size:.94rem;letter-spacing:.16em}.hero-description{max-width:700px;margin:0 0 24px;color:#4e5668;font-size:clamp(1rem,2vw,1.16rem)}.hero-affiliation{margin:0;color:var(--navy);font-weight:700}
+.profile-photo{width:148px;height:auto;margin:auto;border-radius:16px;border:1px solid var(--line);box-shadow:var(--shadow)}
+section{padding:100px 0}.section-head{display:grid;grid-template-columns:170px 1fr;gap:38px;margin-bottom:52px}.section-label{color:var(--pink);font-size:.82rem;font-weight:800;letter-spacing:.14em}.section-title{margin:0 0 12px;color:var(--navy);font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:clamp(2rem,4vw,3.15rem);line-height:1.45}.section-intro{max-width:720px;margin:0;color:var(--muted)}
+.profile-grid{display:grid;grid-template-columns:.9fr 1.2fr;gap:34px}.panel{padding:34px;border:1px solid var(--line);border-radius:var(--radius);background:rgba(255,255,255,.56)}.panel h3{margin-top:0;color:var(--navy);font-family:"Yu Mincho","Hiragino Mincho ProN",serif}
+.research{background:#f3f1ee}.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{min-height:230px;padding:28px;border:1px solid var(--line);border-radius:var(--radius);background:var(--white)}.card:nth-child(odd){border-bottom:4px solid var(--navy)}.card:nth-child(even){border-bottom:4px solid var(--pink)}.card h3{margin:0 0 14px;color:var(--navy);font-family:"Yu Mincho","Hiragino Mincho ProN",serif}.card p{margin:0;color:var(--muted)}
+.activity-list{border-top:1px solid var(--line)}.activity-item{display:grid;grid-template-columns:130px 190px 1fr;gap:28px;align-items:baseline;padding:28px 0;border-bottom:1px solid var(--line)}.activity-item time{color:var(--pink);font-weight:800}.activity-type{width:max-content;padding:4px 12px;border:1px solid var(--line);border-radius:999px;color:var(--navy);font-size:.76rem;font-weight:700}.activity-item h3{margin:0 0 8px;color:var(--navy);font-family:"Yu Mincho","Hiragino Mincho ProN",serif}.activity-item p{margin:0;color:var(--muted)}
+.publications{background:var(--navy);color:#fff}.publications .section-title{color:#fff}.publication-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.publication-card{padding:31px;border:1px solid rgba(255,255,255,.15);border-radius:var(--radius);background:rgba(255,255,255,.045)}.publication-card small{color:#efabc0;font-weight:800}.publication-card h3{margin:12px 0;font-family:"Yu Mincho","Hiragino Mincho ProN",serif}.publication-card p{color:rgba(255,255,255,.69)}
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.news-card{padding:24px 0;border-top:2px solid var(--pink)}.news-card time{color:var(--muted);font-size:.82rem}.news-card h3{color:var(--navy);font-family:"Yu Mincho","Hiragino Mincho ProN",serif}
+.contact-box{padding:60px;border:1px solid var(--line);border-radius:30px;background:linear-gradient(145deg,#faf8f4,#f2dde6);text-align:center}.contact-box h2{color:var(--navy);font-family:"Yu Mincho","Hiragino Mincho ProN",serif}.contact-link{display:inline-flex;padding:12px 22px;background:var(--navy);color:#fff;border-radius:999px;text-decoration:none;font-weight:700}
+footer{padding:32px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem}.footer-inner{display:flex;justify-content:space-between;gap:20px}
+@media(max-width:980px){.hero-inner{grid-template-columns:1fr}.profile-photo{width:118px;margin:0}.card-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){.nav-links{display:none;position:absolute;top:74px;left:0;right:0;padding:22px;background:var(--ivory);flex-direction:column}.nav-links.open{display:flex}.menu-btn{display:block}.section-head,.profile-grid{grid-template-columns:1fr}}
+@media(max-width:680px){.wrap{width:min(calc(100% - 28px),var(--max))}section{padding:76px 0}.hero{min-height:auto}.hero-inner{padding:72px 0}.profile-photo{width:92px}.card-grid,.publication-grid,.news-grid{grid-template-columns:1fr}.activity-item{grid-template-columns:1fr;gap:8px}.contact-box{padding:38px 24px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="#top"><span class="brand-jp" id="brandJa"></span><span class="brand-en" id="brandEn"></span></a><nav class="nav-links" id="navLinks"><a href="#profile">プロフィール</a><a href="#research">研究</a><a href="#activities">活動</a><a href="#publications">書籍・論文</a><a href="#news">お知らせ</a><a href="#contact">お問い合わせ</a></nav><button class="menu-btn" id="menuBtn">☰</button></div></header>
+<main id="top">
+<section class="hero"><div class="wrap hero-inner"><div><h1 id="heroName"></h1><div class="hero-name-en" id="heroNameEn"></div><p class="hero-description" id="heroSummary"></p><p class="hero-affiliation" id="heroAffiliation"></p></div><div><img class="profile-photo" src="profile.jpg" alt="森川麗華のプロフィール写真"></div></div></section>
+<section id="profile"><div class="wrap"><div class="section-head"><div class="section-label">01 / プロフィール</div><div><h2 class="section-title">プロフィール</h2><p class="section-intro">研究の背景と、現在取り組んでいる活動について紹介します。</p></div></div><div class="profile-grid"><article class="panel"><h3>研究について</h3><p id="profileResearch"></p></article><article class="panel"><h3>現在の活動</h3><p id="profileActivities"></p></article></div></div></section>
+<section class="research" id="research"><div class="wrap"><div class="section-head"><div class="section-label">02 / 研究</div><div><h2 class="section-title">主な研究テーマ</h2></div></div><div class="card-grid" id="researchGrid"></div></div></section>
+<section id="activities"><div class="wrap"><div class="section-head"><div class="section-label">03 / 活動</div><div><h2 class="section-title">主な活動</h2></div></div><div class="activity-list" id="activityList"></div></div></section>
+<section class="publications" id="publications"><div class="wrap"><div class="section-head"><div class="section-label">04 / 書籍・論文</div><div><h2 class="section-title">書籍・論文</h2></div></div><div class="publication-grid" id="publicationGrid"></div></div></section>
+<section id="news"><div class="wrap"><div class="section-head"><div class="section-label">05 / お知らせ</div><div><h2 class="section-title">最新のお知らせ</h2></div></div><div class="news-grid" id="newsGrid"></div></div></section>
+<section id="contact"><div class="wrap"><div class="contact-box"><h2>お問い合わせ</h2><p>研究内容に関するお問い合わせ、講演・授業・取材のご依頼、イベントや共同企画のご相談はこちらからお寄せください。</p><a class="contact-link" id="emailLink">メールで問い合わせる</a></div></div></section>
+</main>
+<footer><div class="wrap footer-inner"><span>© <span id="year"></span> 森川麗華</span><span>公式サイト</span></div></footer>
+<script>
+const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+fetch("content.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error("content.jsonを読み込めません");return r.json()}).then(data=>{
+ const s=data.site,p=data.profile;
+ brandJa.textContent=s.name_ja;brandEn.textContent=s.name_en.toUpperCase();heroName.textContent=s.name_ja;heroNameEn.textContent=s.name_en;heroSummary.textContent=p.summary;heroAffiliation.textContent=s.affiliation;profileResearch.textContent=p.research;profileActivities.textContent=p.activities;
+ emailLink.href="mailto:"+s.email;
+ researchGrid.innerHTML=data.research_themes.map(x=>`<article class="card"><h3>${esc(x.title)}</h3><p>${esc(x.description)}</p></article>`).join("");
+ activityList.innerHTML=data.activities.map(x=>`<article class="activity-item"><time>${esc(x.year)}</time><span class="activity-type">${esc(x.category)}</span><div><h3>${esc(x.title)}</h3><p>${esc(x.description)}</p></div></article>`).join("");
+ publicationGrid.innerHTML=data.publications.map(x=>`<article class="publication-card"><small>${esc(x.type)}</small><h3>${esc(x.title)}</h3><p>${esc(x.description)}</p></article>`).join("");
+ newsGrid.innerHTML=data.news.map(x=>`<article class="news-card"><time>${esc(x.date)}</time><h3>${esc(x.title)}</h3><p>${esc(x.description)}</p></article>`).join("");
+}).catch(e=>console.error(e));
+menuBtn.addEventListener("click",()=>{navLinks.classList.toggle("open");menuBtn.textContent=navLinks.classList.contains("open")?"×":"☰"});
+document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>{navLinks.classList.remove("open");menuBtn.textContent="☰"}));
+year.textContent=new Date().getFullYear();
+</script>
+</body></html>
