@@ -5,9 +5,7 @@
     "affiliation": "東京大学 Beyond AI研究推進機構",
     "position": "特任研究員",
     "email": "morikawa.reika98@gmail.com",
-    "orcid": "",
-    "google_scholar": "",
-    "researchmap": ""
+    "researchmap": "https://researchmap.jp/morikawa.reika"
   },
   "profile": {
     "summary": "「中国残留婦人」の歴史社会学的研究を起点に、戦後日本社会における植民地主義の連続性、エスニシティ、メディア表象について研究しています。",
@@ -38,14 +36,7 @@
       "category": "書籍・イベント",
       "title": "『中国残留日本人「三世・四世」という経験』刊行・ブックトーク",
       "description": "中国残留日本人三世・四世の経験をめぐる書籍刊行と関連イベント。",
-      "url": ""
-    },
-    {
-      "year": "2026",
-      "category": "AI倫理",
-      "title": "責任あるAI倫理に関する研究・社会連携",
-      "description": "AIと社会・倫理をめぐる研究、ニュースレター、レクチャー、シンポジウム等に携わっています。",
-      "url": ""
+      "url": "https://youtu.be/zNQ_Ro29GRE"
     }
   ],
   "publications": [
@@ -54,24 +45,13 @@
       "year": "2026",
       "title": "『中国残留日本人「三世・四世」という経験』",
       "citation": "中国残留日本人三世・四世の経験を起点に、過去と現在を捉え直す共同研究。",
-      "url": ""
+      "url": "https://www.hanmoto.com/bd/isbn/9784911029282"
     },
     {
       "type": "論文",
       "year": "2024",
       "title": "戦後日本における「中国残留婦人」への眼差し",
-      "citation": "戦後日本社会において「中国残留婦人」がどのように語られ、位置づけられてきたのかを検討。",
-      "url": ""
-    }
-  ],
-  "presentations": [],
-  "teaching": [],
-  "news": [
-    {
-      "date": "2026.08",
-      "title": "ウェブサイトを準備中です",
-      "description": "研究・教育・社会活動を広く紹介する公式サイトを制作しています。",
-      "url": ""
+      "citation": "戦後日本社会において「中国残留婦人」がどのように語られ、位置づけられてきたのかを検討。"
     }
   ]
 }
