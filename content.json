@@ -54,5 +54,21 @@
       "link_label": "インスタグラム",
       "url": "https://www.instagram.com/morikawa.reika?igsh=YmF3Z3A4b2NhZHdo&utm_source=qr"
     }
+  ],
+  "news": [
+    {
+      "date": "2026.08.14",
+      "title": "「ニュースおかえり」に出演します",
+      "description": "2026年8月14日、関西ローカル「ニュースおかえり」の18時台より、特集「戦争と「残留邦人」の記憶つなぐため語り始めた“孫世代”」に出演します。",
+      "link_label": "ニュースおかえり・詳細",
+      "url": "https://www.asahi.co.jp/tvprogram/"
+    },
+    {
+      "date": "2026.8.13",
+      "title": "インスタグラムを開設しました",
+      "description": "いろいろな情報を告知する、インスタグラムを開設しました！",
+      "link_label": "森川麗華・instagram",
+      "url": "https://www.instagram.com/morikawa.reika?igsh=YmF3Z3A4b2NhZHdo&utm_source=qr"
+    }
   ]
 }
